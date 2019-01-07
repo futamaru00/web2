@@ -1,1 +1,16 @@
 @charset "UTF-8";
+
+.photo{
+  float: left;
+  margin-right: 30px;
+}
+
+.clear_photo{
+  clear: left;
+}
+
+.photo_game:after{
+  content: "";
+  clear: both;
+  display: block;
+}
