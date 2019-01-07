@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+aside{
+  background-color: rosepink;
+}
 .photo{
   float: left;
   margin-right: 30px;
@@ -13,4 +16,8 @@
   content: "";
   clear: both;
   display: block;
+}
+
+#game_title{
+  float: left;
 }
