@@ -33,7 +33,7 @@ h1{
 
 h2{
   font-size:1.75em;
-  color:red;
+  color: red;
 }
 
 .selected {
@@ -47,7 +47,7 @@ li{
 }
 
 div{
-  border: 1px solid lightcoral;
   padding: 5px;
   width: 500px;
+  color: green;
 }
