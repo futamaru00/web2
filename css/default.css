@@ -41,12 +41,13 @@ h2{
     background: #CCC;
 }
 li{
-  width: 200px;
+  width: 150px;
   text-align: center;
   float: left;
 }
 
 div{
   padding: 5px;
+  width: 500px;
   color: green;
 }
