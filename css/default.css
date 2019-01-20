@@ -43,7 +43,8 @@ li{
 }
 
 div{
+  margin
   border: 1px solid lightcoral;
   padding: 5px;
-  width: 500px;
+  width: 550px;
 }
