@@ -6,8 +6,15 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(function(){
-        
-      });
+        $(".panel:not(:first)").hide();
+        $("#tabs a").click(function() {
+          $(".panel").hide();
+          $(".panel").filter(this.hash).show();
+          $("#tabs a").removeClass("selected");
+          $(this).addClass("selected");
+          return false;
+          }).filter(":first").click();
+       });
     </script>
   </head>
   <body>
@@ -16,26 +23,34 @@
     
     <section class="photo_game">
       <aside class="photo">
-     <a href="https://www.freem.ne.jp/win/game/11596"><img src="img/black.jpg" alt="黒のHERO"></a>
+     <a href="https://www.freem.ne.jp/win/game/11596" target="_blank"><img src="img/black.jpg" alt="黒のHERO"></a>
       <p>黒のHERO</p>
       </aside>
       <aside class="photo">
-     <a href="https://www.freem.ne.jp/win/game/13411"><img src="img/sugarless.jpg" alt="SugarLessForest" class="photo"></a>
+     <a href="https://www.freem.ne.jp/win/game/13411" target="_blank"><img src="img/sugarless.jpg" alt="SugarLessForest" class="photo"></a>
       <p>Sugar Less Forest</p>
       </aside>
       <aside class="photo">
-     <a href="https://www.freem.ne.jp/win/game/13628"><img src="img/rabbit.jpg" alt="RabbitMansion" class="photo"></a>
+     <a href="https://www.freem.ne.jp/win/game/13628" target="_blank"><img src="img/rabbit.jpg" alt="RabbitMansion" class="photo"></a>
       <p>Rabbit Mansion</p>
       </aside>
       <aside class="photo">
-     <a href="https://www.freem.ne.jp/win/game/17644"><img src="img/bourei.jpg" alt="亡霊の廃墟ビル" class="photo"></a>
+     <a href="https://www.freem.ne.jp/win/game/17644" target="_blank"><img src="img/bourei.jpg" alt="亡霊の廃墟ビル" class="photo"></a>
       <p>亡霊の廃墟ビル</p>
       </aside>
     </section>
-    <p>※画像をクリックすると各ゲームの配布サイトに飛びます。</p>
-    <a href="#" class="kusouza"><img src="img/bourei.jpg" alt="切り替え用画像"/></a>
+    <ul id="tabs">
+      <li><a href="#tab01">黒のHERO</a></li>
+      <li><a href="#tab02" >Sugar Less Forest</a></li>
+      <li><a href="#tab03" >Rabbit Mansion</a></li>
+      <li><a href="#tab04" >亡霊の廃墟ビル</a></li>
+    </ul>
+ 
+    <div id="tab01" class="panel">1番最初に公開されたファンタジーＲＰＧです。王道から若干ずれていて私が個人的に疑問に思っていたことを解消するように作られたストーリーが特徴です。とにかく私の好きな要素を手当たり次第に突っ込んだ作品でありながらそこそこ好評だったことにより私が調子に乗ってしまうきっかけを作った作品でもあります。</div>
+    <div id="tab02" class="panel">1作目がちょっと人気出たことで調子に乗った結果の片割れです。主人公がマグナムと下ネタぶっ放しまくるストーリーのＲＰＧとなっています。少数ながら実況者の方にプレイしていただいた作品です。</div>
+    <div id="tab03" class="panel">追いかけっこならぬ通称先回りっこ系のホラーゲームです。3週間と短い期間で完成させたゲームながら多くの方から好評をいただいた作品です。また、これまた多くの方から難易度ＨＡＲＤはハードじゃない、とコメントを頂いた作品でもあります。</div>
+    <div id="tab04" class="panel">前作を完成させたときに気力を使い果たしてしまったのか、完成まで1年もの時間がかかってしまったＲＰＧです。ゲームシステムよりもストーリーに重点を置いた作品となっています。</div>
+    <p>※画像をクリックすると各ゲームの配布ページに飛びます。</p>
     <button><a href="http://hutamaru00.wixsite.com/cipher-sapphire" target="_blank">私のサイトへのリンク</a></button>
-      <div class="game_title">
-      </div>
   </body>
 </html>
