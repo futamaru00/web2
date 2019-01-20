@@ -41,6 +41,7 @@ h2{
     background: #CCC;
 }
 li{
+  width: 150px;
   float: left;
 }
 
