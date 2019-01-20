@@ -21,3 +21,8 @@ aside{
 #game_title{
   float: left;
 }
+
+h1{
+  padding: 15px;
+  text-align: center;
+}
