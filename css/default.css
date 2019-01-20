@@ -3,6 +3,10 @@
 body{
   margin: 30px;
 }
+a{
+  width: 0px;
+  height: 0px;
+}
 .photo{
   float: left;
   margin-right: 30px;
