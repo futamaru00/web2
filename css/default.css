@@ -30,3 +30,11 @@ h1{
 .selected {
     background: #CCC;
 }
+
+ul{
+  border: 1px solid lightcoral;
+  backgrond-color: mistyrose;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  }
