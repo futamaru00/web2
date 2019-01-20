@@ -18,8 +18,8 @@ body{
   display: block;
 }
 
-#game_title{
-  float: left;
+.game_title{
+  margin: 0px;
 }
 
 h1{
