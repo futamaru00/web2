@@ -35,10 +35,17 @@ h1{
     background: #CCC;
 }
 
-ul li{
+ul{
   border: 1px solid lightcoral;
   backgrond-color: mistyrose;
   padding: 5px;
   width: 250px;
+  text-align: center;
+  float: left;
+}
+li{
+  border: 1px solid lightcoral;
+  padding: 5px;
+  width: 500px;
   text-align: center;
 }
